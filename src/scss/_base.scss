@@ -1,50 +1,27 @@
-$font-primary: 'Roboto', sans-serif;
-$color-blue: #2371e6;
-$color-blue-vlight: #f2f6ff;
-$color-blue-light: #7eabef;
-$color-green: #2ec001;
-$color-grey: #b3b2b2;
-$color-grey-light: #f2f2f2;
-$color-grey-vlight: #fafafa;
-$color-black: #312e2e;
-$color-orange: #f5aa30;
-$color-shadow: #e4e4e4;
+$font-primary: 'Source Sans Pro', sans-serif;
 
-* {
+
+html, body {
     margin: 0;
+    padding: 0;
 }
 body {
     font-family: $font-primary;
-    background-color: $color-grey-light;
+    font-size: 17px;
+    color: #444;
+    letter-spacing: 1px;
 }
-ul, li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.fontw-bold {
+    font-weight: 600;
 }
-a {
-    color: $color-blue;
-    &:hover {
-        text-decoration: none;
-    }
+.text-xs {
+    font-size: 12px;
+    @extend .fontw-bold;
 }
-.clearfix {
-    clear: both;
+.text-sm {
+    font-size: 14px;
+    @extend .fontw-bold;
 }
-.sl-sidebar, header {
-    background-color: #FFFFFF;
-}
-.sl-sidebar, .navbar-left-sec, .sl-screen-msg, .sl-screen-chat, .msg-card-middle {
-    float: left;
-}
-.navbar-right-sec, .msg-card-right {
-    float: right;
-}
-.navbar-left-sec {
-    .form-group {
-        width: 600px;
-    }
-}
-.sl-box-shadow {
-    box-shadow: 0px 0px 6px $color-shadow;
+.text-upr {
+    text-transform: uppercase;
 }

@@ -4,7 +4,7 @@
     "description": "Static bootstrap html development kit using webpack build packages",
     "main": "index.js",
     "scripts": {
-        "dev": "NODE_ENV==development webpack-dev-server",
+        "dev": "NODE_ENV==development webpack-dev-server --port 3000",
         "build": "NODE_ENV==production webpack -p"
     },
     "author": "sangeeth ks",
