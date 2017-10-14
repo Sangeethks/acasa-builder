@@ -1,8 +1,31 @@
+.aca-text {
+    @extend .weight-bold;
+    @extend .letter-space;
+    @extend .text-upr;
+}
 .aca-text-xs {
     @extend .text-xs;
-    @extend .text-upr;
+    @extend .aca-text;
 }
 .aca-text-sm {
     @extend .text-sm;
-    @extend .text-upr;
+    @extend .aca-text;
+}
+.aca-pre-color-box {
+    text-align: center;
+    .box {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: inline-block;
+        &.yellow {
+            background-color: $color-yellow;
+        }
+        &.grey {
+            background-color: $color-grey;
+        }
+        &.black {
+            background-color: $color-black;
+        }
+    }
 }

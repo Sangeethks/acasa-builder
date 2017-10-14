@@ -1,27 +1,69 @@
 $font-primary: 'Source Sans Pro', sans-serif;
+$color-yellow: #ffe52c;
+$color-grey: #8c8c8c;
+$color-black: #000;
 
+.weight-bold {
+    font-weight: 600;
+}
+.letter-space {
+    letter-spacing: 1px;
+}
+.text-upr {
+    text-transform: uppercase;
+}
+.text-xs {
+    font-size: 12px;
+}
+.text-sm {
+    font-size: 14px;
+}
+.text-md {
+    font-size: 18px;
+}
+.text-h1 {
+    font-size: 44px;
+}
+.text-h2 {
+    font-size: 38px;
+}
+.text-h3 {
+    font-size: 24px;
+}
+.text-h4 {
+    @extend .text-sm;
+}
+.text-h5 {
+    font-size: 14px;
+}
+.text-h6 {
+    font-size: 12px;
+}
 
-html, body {
+html, body, h1, h2, h3, h4, h5, h6, ul, li, pre, xmp, plaintext, listing  {
     margin: 0;
     padding: 0;
 }
 body {
     font-family: $font-primary;
-    font-size: 17px;
+    font-size: 18px;
     color: #444;
-    letter-spacing: 1px;
 }
-.fontw-bold {
-    font-weight: 600;
+h1 {
+    @extend .text-h1;
 }
-.text-xs {
-    font-size: 12px;
-    @extend .fontw-bold;
+h2 {
+    @extend .text-h2;
 }
-.text-sm {
-    font-size: 14px;
-    @extend .fontw-bold;
+h3 {
+    @extend .text-h3;
 }
-.text-upr {
-    text-transform: uppercase;
+h4 {
+    @extend .text-h4;
+}
+h5 {
+    @extend .text-h5;
+}
+h6 {
+    @extend .text-h6;
 }
