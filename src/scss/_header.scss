@@ -1,0 +1,31 @@
+.aca-home-header {
+    .navbar-default {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 40px 0;
+}
+.navbar-brand {
+    margin-right: 40px;
+}
+.nav.navbar-nav {
+    li {
+        @extend .aca-text-sm;
+        padding: 15px 20px;
+        a {
+            padding: 0;
+            color: $color-black;
+            position: relative;
+            &::before {
+                @extend .aca-tran;
+                position: absolute;
+                content: '';
+                width: 0;
+                &:hover {
+                    @extend .aca-cent-before;
+                }
+            }
+        }
+    }
+}
+}

@@ -9,6 +9,12 @@ $color-black: #000;
 .letter-space {
     letter-spacing: 1px;
 }
+.aca-lineh-sm {
+    line-height: 1.2em;
+}
+.aca-lineh-md {
+    line-height: 1.5em;
+}
 .text-upr {
     text-transform: uppercase;
 }
@@ -21,33 +27,39 @@ $color-black: #000;
 .text-md {
     font-size: 18px;
 }
+.text-lg {
+    font-size: 38px;
+}
 .text-h1 {
     font-size: 44px;
 }
 .text-h2 {
-    font-size: 38px;
+    @extend .text-lg;
 }
 .text-h3 {
     font-size: 24px;
 }
 .text-h4 {
-    @extend .text-sm;
+    @extend .text-md;
 }
 .text-h5 {
-    font-size: 14px;
+    @extend .text-sm;
 }
 .text-h6 {
     font-size: 12px;
 }
+.aca-tran {
+    transition: all 0.3s ease;
+}
 
-html, body, h1, h2, h3, h4, h5, h6, ul, li, pre, xmp, plaintext, listing  {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, pre, xmp, plaintext, listing  {
     margin: 0;
     padding: 0;
 }
 body {
     font-family: $font-primary;
     font-size: 18px;
-    color: #444;
+    color: $color-black;
 }
 h1 {
     @extend .text-h1;
