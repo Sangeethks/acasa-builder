@@ -1,3 +1,113 @@
+/** components.html **/
 .aca-page-components {
     padding: 60px 0;
+}
+/** index.html **/
+.page-sec {
+    @extend .aca-page-pad-md;
+}
+.aca-landm-right {
+    position: relative;
+    .aca-info-box {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.aca-land-main {
+    position: relative;
+    .aca-landm-info {
+        position: absolute;
+        top: 0;
+        right: 1px;
+        transform: rotate(-270deg);
+    }
+}
+.aca-landm-img {
+    margin-top: 40px;
+}
+.aca-pgent-right {
+    img {
+        width: 80%;
+    }
+}
+.aca-pagegent-sec {
+    position: relative;
+}
+.aca-gent-feat {
+    position: absolute;
+    bottom: 80px;
+    padding: 35px 40px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 16px 1px $color-shadow;
+    ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            margin-right: 80px;
+            &:last-child {
+                margin-right: 0;
+            }
+            h1 {
+                margin-bottom: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.aca-pginvst-btns {
+    margin-top: 30px;
+}
+.aca-ppti-tabs {
+    margin-top: 60px;
+    .nav-pills {
+    border-bottom: 1px solid $color-shadow;
+}
+    ul {
+    text-align: center;
+    li {
+        display: inline-block;
+        float: none;
+        a {
+            border-radius: 0;
+            color: $color-grey;
+            @extend .text-upr;
+            @extend .aca-tran;
+            @extend .letter-space;
+            &:hover {
+                background-color: transparent;
+                color: $color-black;
+            }
+        }
+    }
+}
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: $color-black;
+    background: transparent;
+    border-bottom: 4px solid $color-yellow;
+}
+.aca-ppti-loc-sec {
+    margin-top: 50px;
+}
+.aca-ppti-loc-box {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    border: 1px solid $color-grey;
+    margin-bottom: 2%;
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+    .aca-pptilb-cont, .aca-pptilb-ico {
+        padding: 15px 30px;
+    }
+    .aca-pptilb-cont {
+        float: left;
+    }
+    .aca-pptilb-ico {
+        float: right;
+        border-left: 1px solid $color-grey;
+    }
 }

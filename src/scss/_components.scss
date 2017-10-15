@@ -11,6 +11,14 @@
     @extend .text-sm;
     @extend .aca-text;
 }
+.aca-text-md {
+    @extend .text-md;
+    @extend .aca-text;
+}
+.aca-text-lg {
+    @extend .text-lg;
+    @extend .aca-text;
+}
 .aca-pre-color-box {
     text-align: center;
     .box {
@@ -51,21 +59,25 @@
 .aca-head {
     position: relative;
     margin-bottom: 30px;
-    display: inline-block;
     @extend .text-upr;
     &.head-sm {
         @extend .aca-text-sm;
+    }
+    &.head-md {
+        @extend .aca-text-md;
     }
     &.head-lg {
         @extend .text-lg;
         @extend .aca-lineh-sm;
     }
     &.prim {
+        display: inline-block;
         &::before {
             @extend .aca-prim-before;
         }
     }
     &.cent {
+        display: inline-block;
         text-align: center;
         &::before {
             @extend .aca-cent-before;
@@ -75,7 +87,6 @@
 .aca-dash-head {
     position: relative;
     padding-left: 100px;
-    @extend .aca-lineh-md;
     &::before {
         position: absolute;
         content: '';
@@ -85,4 +96,47 @@
         width: 80px;
         height: 1px;
     }
+}
+/** Info box **/
+.aca-info-box {
+    text-align: left;
+    display: inline-block;
+    background: yellow;
+    @extend .text-upr;
+    &.xs {
+        padding: 15px;
+    }
+    &.sm {
+        padding: 35px;
+    }
+    .aca-infbx-cnt {
+        p, h4 {
+            margin-bottom: 16px;
+            @extend .aca-lineh-sm;
+        }
+        &:first-child {
+            margin-bottom: 20px;
+            border-bottom: 1px solid $color-black;
+        }
+        &:last-child {
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.aca-page-pad-md {
+    padding: 60px 0;
+}
+
+
+/** buttons **/
+.aca-btn {
+    border-radius: 0;
+    @extend .letter-space;
+    @extend .text-upr;
+}
+.btn-prim {
+    background-color: $color-yellow;
+    padding: 14px 26px;
 }
